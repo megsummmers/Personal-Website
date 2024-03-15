@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="ms_script.js"></script>
     <link rel="stylesheet" type="text/css" href="ms_stylesheet.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -8,19 +9,193 @@
   </head>
   <body>
     <div class="menu">
-      <button id="menuBtn">Home</button>
-      <button id="menuBtn">Portfolio</button>
-      <button id="menuBtn">Projects</button>
-      <button id="menuBtn">About Me</button>
+      <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
+      <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
+      <button id="menuBtn" onclick="moveCircle(3)">PROJECTS</button>
+      <button id="menuBtn" onclick="moveCircle(4)">ABOUT ME</button>
     </div>
-    <div class="name">
+
+    <div class="home" id="name" style="display: inline">
       <h1>Margaret Summers</h1>
     </div>
-    <div class="object">
 
+    <div id="PortfolioSec" style="display: none">
+      <div class="portfolio">
+        <div class="pfLeft">
+          <p class="name">Portfolio</p>
+          <p>A collection of completed projects and prototypes.</p>
+        </div>
+        <div class="pfRight">
+          <div class="smallBox">
+            <h2>Project 1</h2>
+            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+          </div>
+          <div class="smallBox">
+            <h2>Project 2</h2>
+            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="portfolio">
+        <div class="bigBox">
+          <div id="Pf1">
+            <h2>Project 1</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf2" style="display: none">
+            <h2>Project 2</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf3" style="display: none">
+            <h2>Project 3</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div class="menu">
+            <button onclick="changeProject('Pf', 1)" class="btn"></button>
+            <button onclick="changeProject('Pf', 2)" class="btn"></button>
+            <button onclick="changeProject('Pf', 3)" class="btn"></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="ground">
 
+    <div id="AboutSec" style="display: none">
+      <div class="about">
+        <div class="abLeft">
+          <img src="images/Placeholder.png" alt="" class="bigImg">
+        </div>
+        <div class="abRight">
+          <p class="name">About the Artist</p>
+          <p>Short description of me</p>
+          <br>
+          <p>Read more below</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+        <div class="about">
+          <div class="bigBox">
+          <div id="Pf1">
+            <h2>Project 1</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf2" style="display: none">
+            <h2>Project 2</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf3" style="display: none">
+            <h2>Project 3</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div class="menu">
+            <button onclick="changeProject('Pf', 1)" class="btn"></button>
+            <button onclick="changeProject('Pf', 2)" class="btn"></button>
+            <button onclick="changeProject('Pf', 3)" class="btn"></button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ProjectSec" style="display: none">
+      <div class="projects">
+        <div class="pfLeft">
+          <p class="name">Projects</p>
+          <p>A collection of incomplete or test projects and prototypes.</p>
+        </div>
+        <div class="pfRight">
+          <div class="smallBox">
+            <h2>Project 1</h2>
+            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+          </div>
+          <div class="smallBox">
+            <h2>Project 2</h2>
+            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="projects">
+        <div class="bigBox">
+          <div id="Pf1">
+            <h2>Project 1</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf2" style="display: none">
+            <h2>Project 2</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Pf3" style="display: none">
+            <h2>Project 3</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div class="menu">
+            <button onclick="changeProject('Pf', 1)" class="btn"></button>
+            <button onclick="changeProject('Pf', 2)" class="btn"></button>
+            <button onclick="changeProject('Pf', 3)" class="btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="object">
+      <div class="circle" id="circle"></div>
+      <div class="ground"></div>
     </div>
   </body>
 </html>
