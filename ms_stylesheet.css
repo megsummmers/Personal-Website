@@ -6,7 +6,7 @@
 html {
     height: 100%;
     background-repeat:inherit;
-    background-image: linear-gradient(to bottom, #C9B0D1, #EAE2ED);
+    background-image: linear-gradient(to bottom right, #AB89B5, #C9B0D1, #EAE2ED);
     font-family: "Poppins", sans-serif;
 }
 
@@ -42,9 +42,6 @@ body {
 }
 
 #menuBtn:hover{
-    background-color: white;
-    border: none;
-    border-radius: 0.5rem;
     font-size: 1.7rem;
 }
 
@@ -60,9 +57,15 @@ body {
     text-align: left;
 }
 
+.smallTitle{
+    font-family: "Berkshire Swash", serif;
+    font-size: 4rem;
+    text-align: left;
+}
+
 .portfolio {
     text-align: left;
-    height: 90%;
+    height: 85%;
 }
 
 .pfLeft{
@@ -81,7 +84,7 @@ body {
 
 .about {
     text-align: left;
-    height: 90%;
+    height: 85%;
 }
 
 .abLeft{
@@ -97,11 +100,41 @@ body {
     margin: 2.5%;
     float: right;
     text-align: left;
+    overflow-wrap: auto;
+}
+
+.abtText {
+    font-size: 1.2rem;
+    background-color: #EAE2ED;
+    padding: 1rem;
+}
+
+.prLeft{
+    width: 30%;
+    margin: 2.5%;
+    margin-left: 5%;
+    float: left;
+    text-align: left;
+}
+
+.prRight{
+    width: 40%;
+    margin: 2.5%;
+    margin-top: 8rem;
+    float: right;
+    text-align: left;
+    overflow-wrap: scroll;
+}
+
+.prText {
+    font-size: 1.2rem;
+    background-color: #EAE2ED;
+    padding: 1rem;
 }
 
 .projects {
     text-align: left;
-    height: 90%;
+    height: 85%;
 }
 
 .smallBox{
@@ -111,9 +144,9 @@ body {
 }
 
 .bigBox{
-    overflow-x: scroll;
+    /* overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
+    white-space: nowrap; */
     background-color: white;
     height: 50rem;
     margin: 5rem;
@@ -126,51 +159,62 @@ body {
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+    margin-left: 5rem;
     border-radius: 3rem;
     border: none;
-    background-color: #AB89B5;
+    background-color: #C9B0D1;
+    text-align: center;
 }
 
 .btn:hover{
-    background-color: #C9B0D1;
+    background-color: white;
+}
+
+.btn:focus{
+    background-color: white;
 }
 
 .smallImg{
     width: 20rem;
 }
 .bigImg{
-    width: 40rem;
+    width: 50rem;
 }
 
 .imgScroll{
     overflow: auto;
     white-space: nowrap;
-    width: 60rem;
+    width: 55rem;
 }
 
-.circle{
+.divider{
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: #48314E;
+}
+
+.dividerT{
+    background-color: transparent;
+}
+
+#circle{
     height: 10rem;
     width: 10rem;
     position: fixed;
-    bottom: 6rem;
+    bottom: 5rem;
     left: 1%;
     z-index: 2;
-    background-color: #48314E;
-    border-radius: 5rem;
+    background-color: #6B4A75;
+    border-radius: 10rem;
     transition: left 3s;
 }
 
-.ground{
+#ground{
     width: 100%;
     height: 2rem;
     position: fixed;
     z-index: 1;
     bottom: 0rem;
-    border-bottom: 6rem solid #48314E;
-}
-
-.divider{
-    width: 100%;
-    height: 10%;
-    background-color: #48314E;
+    border-bottom: 5rem solid #48314E;
 }
