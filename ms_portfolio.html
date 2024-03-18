@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="ms_stylesheet.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Meg's Weekly Responses</title>
   </head>
   <body>
@@ -16,23 +17,23 @@
     </div>
 
     <div class="home" id="name" style="display: inline">
-      <h1 style="color: white;">Margaret Summers</h1>
+      <h1 style="color: white;">Margaret<br>Summers</h1>
     </div>
     <!--------------------- PORTFOLIO SECTION ---------------------->
     <div id="PortfolioSec" style="display: none">
       <div class="portfolio">
         <div class="pfLeft">
           <p class="name">Portfolio</p>
-          <p>A collection of completed projects and prototypes.</p>
+          <p class="txtbox">A collection of completed projects and prototypes.</p>
         </div>
         <div class="pfRight">
           <div class="smallBox">
-            <h2>Project 1</h2>
-            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+            <h2>Winter Break</h2>
+            <img src="images/WB_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 1)">
           </div>
           <div class="smallBox">
-            <h2>Project 2</h2>
-            <img src="images/Placeholder.png" alt="Placeholder" class="smallImg">
+            <h2>No Clue</h2>
+            <img src="images/NC_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 2)">
           </div>
         </div>
       </div>
@@ -65,15 +66,15 @@
           </div>
           <div id="Pf2" style="display: none">
             <div class="prLeft">
-              <h2 class="smallTitle">Winter Break</h2>
+              <h2 class="smallTitle">No Clue</h2>
               <div class="imgScroll">
-                <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
               </div>
             </div>
             <div class="prRight">
@@ -85,15 +86,51 @@
           </div>
           <div id="Pf3" style="display: none">
             <div class="prLeft">
-              <h2 class="smallTitle">Winter Break</h2>
+              <h2 class="smallTitle">Reboot</h2>
               <div class="imgScroll">
-                <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
+                <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
+              </div>
+            </div>
+            <div class="prRight">
+              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
+              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                ​<br><br>
+                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
+            </div>
+          </div>
+          <div id="Pf4" style="display: none">
+            <div class="prLeft">
+              <h2 class="smallTitle">Barn Gambles</h2>
+              <div class="imgScroll">
+                <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
+                <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
+              </div>
+            </div>
+            <div class="prRight">
+              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
+              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                ​<br><br>
+                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
+            </div>
+          </div>
+          <div id="Pf5" style="display: none">
+            <div class="prLeft">
+              <h2 class="smallTitle">Grow your City</h2>
+              <div class="imgScroll">
+                <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
+                <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
+                <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
+                <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
               </div>
             </div>
             <div class="prRight">
@@ -108,6 +145,8 @@
           <button onclick="changeProject('Pf', 1)" class="btn"></button>
           <button onclick="changeProject('Pf', 2)" class="btn"></button>
           <button onclick="changeProject('Pf', 3)" class="btn"></button>
+          <button onclick="changeProject('Pf', 4)" class="btn"></button>
+          <button onclick="changeProject('Pf', 5)" class="btn"></button>
         </div>
       </div>
     </div>
@@ -119,7 +158,7 @@
         </div>
         <div class="abRight">
           <p class="name">About the Artist</p>
-          <p>Short description of me</p>
+          <p class="txtbox" style="width: 50rem">Short description of me</p>
           <br>
           <p>Read more below</p>
         </div>
@@ -153,19 +192,20 @@
             </div>
           </div>
           <div id="Ab3" style="display: none">
-            <h2>Project 3</h2>
-            <p>Game description goes here.</p>
-            <div class="imgScroll">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-            </div>
+            <button class="abBtn" style="width: 9rem; background-color: #DDCBE2;">&#9993;</button>
+            <h1 class="name" style="text-align: center;">Contact Me</h1>
+            <p>To contact me for freelance or other potential work you can contact me by email megsummers.design@gmail.com.
+              <br>I am currently available for work, so feel free to contact me.
+            </p>
+            <button class="abBtn"><i class="fa fa-envelope"></i></button>
+            <button class="abBtn"><i class="fa fa-instagram"></i></button>
+            <button class="abBtn"><i class="fa fa-linkedin"></i></button>
+            <button class="abBtn"><i class="fa fa-gamepad"></i></button>
           </div>
         </div>
         <div class="divider" style="width: 100%; height: 5rem;">
           <button onclick="changeProject('Ab', 1)" class="btn"></button>
-          <button onclick="changeProject('Ab', 2)" class="btn"></button>
+          <button onclick="changeProject('Ab', 2)" class="btn" style="background-color: #EAE2ED;"></button>
           <button onclick="changeProject('Ab', 3)" class="btn"></button>
         </div>
       </div>
@@ -175,7 +215,7 @@
       <div class="projects">
         <div class="pfLeft">
           <p class="name">Projects</p>
-          <p>A collection of incomplete or test projects and prototypes.</p>
+          <p class="txtbox">A collection of incomplete or test projects and prototypes.</p>
         </div>
         <div class="pfRight">
           <div class="smallBox">
