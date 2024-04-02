@@ -12,15 +12,15 @@
     <div class="menu">
       <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
       <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
-      <button id="menuBtn" onclick="moveCircle(3)">ABOUT ME</button>
-      <button id="menuBtn" onclick="moveCircle(4)">PROJECTS</button>
+      <button id="menuBtn" onclick="moveCircle(3)">PROJECTS</button>
+      <button id="menuBtn" onclick="moveCircle(4)">ABOUT ME</button>
     </div>
-
     <div class="home" id="name" style="display: inline">
       <h1 style="color: white;">Margaret<br>Summers</h1>
     </div>
     <!--------------------- PORTFOLIO SECTION ---------------------->
     <div id="PortfolioSec" style="display: none">
+      <!--------------------- TOP PAGE ---------------------->
       <div class="portfolio">
         <div class="pfLeft">
           <p class="name">Portfolio</p>
@@ -43,170 +43,171 @@
         <div class="divider" style="width: 60%;"></div>
       </div>
       <div class="portfolio">
-        <div class="bigBox">
-          <div id="Pf1">
-            <div class="prLeft">
-              <h2 class="smallTitle">Winter Break</h2>
-              <div class="imgScroll">
-                <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+        <!--------------------- BOTTOM PAGE ---------------------->
+        <div class="menu" style="position: sticky; top: 2rem; margin-top: 2rem; border: none;">
+          <button id="menuBtn" onclick="moveCircle(2)">GAMES</button>
+          <button id="menuBtn" onclick="moveCircle(3)">3D WORK</button>
+          <button id="menuBtn" onclick="moveCircle(4)">GRAPHIC</button>
+        </div>
+        <div class="Hscroll">
+          <div class="bigBox">
+            <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn"><i class="fa fa-chevron-left"></i></button>
+            <div id="Pf1" style="display: contents">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
               </div>
             </div>
-            <div class="prRight">
-              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
-              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                ​<br><br>
-                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-            </div>
-          </div>
-          <div id="Pf2" style="display: none">
-            <div class="prLeft">
-              <h2 class="smallTitle">No Clue</h2>
-              <div class="imgScroll">
-                <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
+            <div id="Pf2" style="display: none">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">No Clue</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
               </div>
             </div>
-            <div class="prRight">
-              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
-              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                ​<br><br>
-                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-            </div>
-          </div>
-          <div id="Pf3" style="display: none">
-            <div class="prLeft">
-              <h2 class="smallTitle">Reboot</h2>
-              <div class="imgScroll">
-                <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
-                <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
-                <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
-                <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
-                <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
-                <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
+            <div id="Pf3" style="display: none">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Reboot</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
+                  <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
+                  <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
+                  <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
+                  <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
+                  <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
               </div>
             </div>
-            <div class="prRight">
-              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
-              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                ​<br><br>
-                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-            </div>
-          </div>
-          <div id="Pf4" style="display: none">
-            <div class="prLeft">
-              <h2 class="smallTitle">Barn Gambles</h2>
-              <div class="imgScroll">
-                <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
-                <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
+            <div id="Pf4" style="display: none">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Barn Gambles</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
               </div>
             </div>
-            <div class="prRight">
-              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
-              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                ​<br><br>
-                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-            </div>
-          </div>
-          <div id="Pf5" style="display: none">
-            <div class="prLeft">
-              <h2 class="smallTitle">Grow your City</h2>
-              <div class="imgScroll">
-                <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
-                <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
-                <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
-                <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
+            <div id="Pf5" style="display: none">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
+                  <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
+                  <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
               </div>
             </div>
-            <div class="prRight">
-              <p>Check out the game on Itch.io<button class="btn" style="margin-left: 10rem; width: 2rem; height: 2rem;">></button></p>
-              <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                ​<br><br>
-                On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
+            <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn"><i class="fa fa-chevron-right"></i></button>
+          </div>
+          <div class="bigBox">
+            <div id="Pf1">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="divider" style="width: 100%; height: 5rem;">
-          <button onclick="changeProject('Pf', 1)" class="btn"></button>
-          <button onclick="changeProject('Pf', 2)" class="btn"></button>
-          <button onclick="changeProject('Pf', 3)" class="btn"></button>
-          <button onclick="changeProject('Pf', 4)" class="btn"></button>
-          <button onclick="changeProject('Pf', 5)" class="btn"></button>
-        </div>
-      </div>
-    </div>
-    <!--------------------- ABOUT ME SECTION ---------------------->
-    <div id="AboutSec" style="display: none">
-      <div class="about">
-        <div class="abLeft">
-          <img src="images/Picture.jpg" alt="" style="width: 35rem; border-bottom: 2rem #EAE2ED solid; border-right: 2rem #EAE2ED solid">
-        </div>
-        <div class="abRight">
-          <p class="name">About the Artist</p>
-          <p class="txtbox" style="width: 50rem">Short description of me</p>
-          <br>
-          <p>Read more below</p>
-        </div>
-      </div>
-      <div style="width: 100%; height: 6rem; display:flex">
-        <div class="divider" style="width: 58%;"></div>
-        <div class="dividerT" style="width: 12%;"></div>
-        <div class="divider" style="width: 30%;"></div>
-      </div>
-      <div class="about">
-        <div class="bigBox">
-          <div id="Ab1" style="display: none">
-            <h2>Project 3</h2>
-            <p>Game description goes here.</p>
-            <div class="imgScroll">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
-              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+          <div class="bigBox" style="margin-bottom: 4rem;">
+            <div id="Pf1">
+              <div class="prLeft">
+                <div class="prTitle">
+                  <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                  <button class="prBtn"><i class="fa-solid fa-store"></i></button>
+                </div>
+                <div class="imgScroll">
+                  <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                  <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                </div>
+              </div>
+              <div class="prRight">
+                <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                  ​<br><br>
+                  On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
+              </div>
             </div>
           </div>
-          <div id="Ab2" style="overflow: auto;">
-            <div class="abLeft">
-              <img src="images/Picture_2.png" alt="Placeholder" style="width: 32rem; margin-left: 10rem;">
-            </div>
-            <div class="abRight">
-              <h1 class="name">Margaret Summers</h1>
-              <p class="abtText">My name is Margaret Summers and I am an upcoming game developer.
-                I specialize in game development and throughout my studies I have learned to program in multiple languages for a range of different digital mediums and platforms. My passion is developing games and other digital media that immerse audiences in a new world of my own creation. Through the medium of games, I hope to make topics considered to be difficult more accessible in an entertaining and challenging way. <n>
-              <br><br>By using more experimental game mechanics and explorative design, I strive to build a narrative that can convey a wide range of themes and topics. My projects aim to allow the audience to explore and learn about themes or topics through the rules of these new worlds. I believe in learning through ones own experiences and learning the boundaries and results of your actions through mistakes. I use my work to push people outside of their comfort zone to broaden their horizons through creative experiences.</p>
-            </div>
-          </div>
-          <div id="Ab3" style="display: none">
-            <button class="abBtn" style="width: 9rem; background-color: #DDCBE2;">&#9993;</button>
-            <h1 class="name" style="text-align: center;">Contact Me</h1>
-            <p>To contact me for freelance or other potential work you can contact me by email megsummers.design@gmail.com.
-              <br>I am currently available for work, so feel free to contact me.
-            </p>
-            <button class="abBtn"><i class="fa fa-envelope"></i></button>
-            <button class="abBtn"><i class="fa fa-instagram"></i></button>
-            <button class="abBtn"><i class="fa fa-linkedin"></i></button>
-            <button class="abBtn"><i class="fa fa-gamepad"></i></button>
-          </div>
-        </div>
-        <div class="divider" style="width: 100%; height: 5rem;">
-          <button onclick="changeProject('Ab', 1)" class="btn"></button>
-          <button onclick="changeProject('Ab', 2)" class="btn" style="background-color: #EAE2ED;"></button>
-          <button onclick="changeProject('Ab', 3)" class="btn"></button>
         </div>
       </div>
     </div>
@@ -237,7 +238,10 @@
         <div class="bigBox">
           <div id="Pr1">
             <div class="prLeft">
-              <h2 class="smallTitle">Winter Break</h2>
+              <div>
+                <h2 class="smallTitle">Winter Break</h2>
+
+              </div>
               <div class="imgScroll">
                 <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
                 <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
@@ -300,6 +304,66 @@
           <button onclick="changeProject('Pr', 1)" class="btn"></button>
           <button onclick="changeProject('Pr', 2)" class="btn"></button>
           <button onclick="changeProject('Pr', 3)" class="btn"></button>
+        </div>
+      </div>
+    </div>
+    <!--------------------- ABOUT ME SECTION ---------------------->
+    <div id="AboutSec" style="display: none">
+      <div class="about">
+        <div class="abLeft">
+          <img src="images/Picture.jpg" alt="" style="width: 35rem; border-bottom: 2rem #EAE2ED solid; border-right: 2rem #EAE2ED solid">
+        </div>
+        <div class="abRight">
+          <p class="name">About the Artist</p>
+          <p class="txtbox" style="width: 50rem">Short description of me</p>
+          <br>
+          <p>Read more below</p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 6rem; display:flex">
+        <div class="divider" style="width: 58%;"></div>
+        <div class="dividerT" style="width: 12%;"></div>
+        <div class="divider" style="width: 30%;"></div>
+      </div>
+      <div class="about">
+        <div class="bigBox">
+          <div id="Ab1" style="display: none">
+            <h2>Project 3</h2>
+            <p>Game description goes here.</p>
+            <div class="imgScroll">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+              <img src="images/Placeholder.png" alt="Placeholder" class="bigImg">
+            </div>
+          </div>
+          <div id="Ab2" style="overflow: auto;">
+            <div class="abLeft">
+              <img src="images/Picture_2.png" alt="Placeholder" style="width: 32rem; margin-left: 10rem;">
+            </div>
+            <div class="abRight">
+              <h1 class="name">Margaret Summers</h1>
+              <p class="abtText">My name is Margaret Summers and I am an upcoming game developer.
+                I specialize in game development and throughout my studies I have learned to program in multiple languages for a range of different digital mediums and platforms. My passion is developing games and other digital media that immerse audiences in a new world of my own creation. Through the medium of games, I hope to make topics considered to be difficult more accessible in an entertaining and challenging way. <n>
+              <br><br>By using more experimental game mechanics and explorative design, I strive to build a narrative that can convey a wide range of themes and topics. My projects aim to allow the audience to explore and learn about themes or topics through the rules of these new worlds. I believe in learning through ones own experiences and learning the boundaries and results of your actions through mistakes. I use my work to push people outside of their comfort zone to broaden their horizons through creative experiences.</p>
+            </div>
+          </div>
+          <div id="Ab3" style="display: none">
+            <button class="abBtn" style="width: 9rem; background-color: #DDCBE2;">&#9993;</button>
+            <h1 class="name" style="text-align: center;">Contact Me</h1>
+            <p>To contact me for freelance or other potential work you can contact me by email megsummers.design@gmail.com.
+              <br>I am currently available for work, so feel free to contact me.
+            </p>
+            <button class="abBtn"><i class="fa fa-envelope"></i></button>
+            <button class="abBtn"><i class="fa fa-instagram"></i></button>
+            <button class="abBtn"><i class="fa fa-linkedin"></i></button>
+            <button class="abBtn"><i class="fa fa-gamepad"></i></button>
+          </div>
+        </div>
+        <div class="divider" style="width: 100%; height: 5rem;">
+          <button onclick="changeProject('Ab', 1)" class="btn"></button>
+          <button onclick="changeProject('Ab', 2)" class="btn" style="background-color: #EAE2ED;"></button>
+          <button onclick="changeProject('Ab', 3)" class="btn"></button>
         </div>
       </div>
     </div>

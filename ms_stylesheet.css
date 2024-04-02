@@ -58,13 +58,21 @@ body {
 
 .smallTitle{
     font-family: "Berkshire Swash", serif;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: left;
 }
 
 .portfolio {
     text-align: left;
-    height: 85%;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.Hscroll {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .pfLeft{
@@ -149,9 +157,39 @@ body {
     padding: 1rem;
 }
 
+.prBtn {
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 5rem;
+    background-color: #AB89B5;
+    color: white;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    margin-left: 4rem;
+}
+
+.prFloatBtn{
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    background-color: white;
+    color: #ab89b5;
+}
+
+.prTitle {
+    display: inline-flex;
+    align-items: end;
+    width: 50rem;
+}
+
 .projects {
     text-align: left;
     height: 85%;
+    width: 50rem;
 }
 
 .smallBox{
@@ -162,14 +200,14 @@ body {
 }
 
 .bigBox{
-    /* overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap; */
     background-color: white;
     height: 50rem;
-    margin: 5rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    flex-basis: 100rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-bottom: 7rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
     padding: 2rem;
 }
 
@@ -211,7 +249,7 @@ body {
 .imgScroll{
     overflow: auto;
     white-space: nowrap;
-    width: 55rem;
+    width: 50rem;
 }
 
 .divider{
@@ -234,7 +272,7 @@ body {
     z-index: 2;
     background-color: #6B4A75;
     border-radius: 10rem;
-    transition: left 3s;
+    transition: left 2s;
 }
 
 #ground{

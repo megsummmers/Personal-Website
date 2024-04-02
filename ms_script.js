@@ -3,12 +3,21 @@ let page = 1;
 
 // hide ground after scrolling down
 window.addEventListener("scroll", function(){
-    //console.log(this.scrollX)
-    if(page != 'home'){
+    let scrollx = this.scrollX;
+    //console.log(this.scrollY);
+    if(page != 1){
         if(this.scrollY <= 10){
             this.document.getElementById("ground").style.display = "inline";
         } else {
             this.document.getElementById("ground").style.display = "none";
+        }
+    }
+
+    if(page == 2){
+        if(this.scrollY >= 1200 && this.scrollX >= scrollx){
+            document.getElementById("scrollH").scrollLeft += 950;
+        } else if(this.scrollY >= 1200 && this.scrollX <= scrollx){
+            document.getElementById("scrollH").scrollLeft += 950;
         }
     }
 }, false);
@@ -36,7 +45,7 @@ function moveCircle(pageNum){
     switch(pageNum){
         case 1:
         document.getElementById("circle").style.left = "1%";
-        document.getElementById("name").style.display = "inline";
+        document.getElementById("name").style.display = "contents";
         document.getElementById("PortfolioSec").style.display = "none";
         document.getElementById("ProjectSec").style.display = "none";
         document.getElementById("AboutSec").style.display = "none";
@@ -45,27 +54,34 @@ function moveCircle(pageNum){
         case 2: 
         document.getElementById("circle").style.left = "30%";
         document.getElementById("name").style.display = "none";
-        document.getElementById("PortfolioSec").style.display = "inline";
+        document.getElementById("PortfolioSec").style.display = "contents";
         document.getElementById("ProjectSec").style.display = "none";
         document.getElementById("AboutSec").style.display = "none";
         page = 2;
         break;
         case 3: 
+        document.getElementById("circle").style.left = "90%";
+        document.getElementById("name").style.display = "none";
+        document.getElementById("PortfolioSec").style.display = "none";
+        document.getElementById("ProjectSec").style.display = "contents";
+        document.getElementById("AboutSec").style.display = "none";
+        page = 3;
+        break;
+        case 4: 
         document.getElementById("circle").style.left = "60%";
         document.getElementById("name").style.display = "none";
         document.getElementById("PortfolioSec").style.display = "none";
         document.getElementById("ProjectSec").style.display = "none";
-        document.getElementById("AboutSec").style.display = "inline";
-        page = 3;
-        break;
-        case 4: 
-        document.getElementById("circle").style.left = "90%";
-        document.getElementById("name").style.display = "none";
-        document.getElementById("PortfolioSec").style.display = "none";
-        document.getElementById("ProjectSec").style.display = "inline";
-        document.getElementById("AboutSec").style.display = "none";
+        document.getElementById("AboutSec").style.display = "contents";
         page = 4;
         break;
+    }
+}
+
+function scrollH(num){
+    switch(num){
+        case 1:
+            document.getElementById("scrollH").scrollLeft += 950;
     }
 }
 
