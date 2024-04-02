@@ -1,5 +1,6 @@
 //variables
 let page = 1;
+let num = 0;
 
 // hide ground after scrolling down
 window.addEventListener("scroll", function(){
@@ -60,7 +61,7 @@ function moveCircle(pageNum){
         page = 2;
         break;
         case 3: 
-        document.getElementById("circle").style.left = "90%";
+        document.getElementById("circle").style.left = "60%";
         document.getElementById("name").style.display = "none";
         document.getElementById("PortfolioSec").style.display = "none";
         document.getElementById("ProjectSec").style.display = "contents";
@@ -68,7 +69,7 @@ function moveCircle(pageNum){
         page = 3;
         break;
         case 4: 
-        document.getElementById("circle").style.left = "60%";
+        document.getElementById("circle").style.left = "90%";
         document.getElementById("name").style.display = "none";
         document.getElementById("PortfolioSec").style.display = "none";
         document.getElementById("ProjectSec").style.display = "none";
@@ -91,28 +92,48 @@ function previewJump(type, num){
     changeProject(type, num);
 }
 
-function changeProject(type, num){
+function changeProject(type, side){
     var pages = [];
 
-    if(type == 'Pf'){
-        pages[0] = document.getElementById("Pf1");
-        pages[1] = document.getElementById("Pf2");
-        pages[2] = document.getElementById("Pf3");
-        pages[3] = document.getElementById("Pf4");
-        pages[4] = document.getElementById("Pf5");
+    if(type == 'PfGa'){
+        pages[0] = document.getElementById("PfGa1");
+        pages[1] = document.getElementById("PfGa2");
+        pages[2] = document.getElementById("PfGa3");
+        pages[3] = document.getElementById("PfGa4");
+        pages[4] = document.getElementById("PfGa5");
+        // change max
+        if(side == "left" && num != 0){
+            num -= 1;
+        }else if(side == "right" && num != 4){
+            num += 1;
+        }
     } else if(type == 'Ab'){
         pages[0] = document.getElementById("Ab1");
         pages[1] = document.getElementById("Ab2");
         pages[2] = document.getElementById("Ab3");
+        // change max
+        if(side == "left" && num != 0){
+            num -= 1;
+        }else if(side == "right" && num != 2){
+            num += 1;
+        }
     } else if(type == 'Pr'){
         pages[0] = document.getElementById("Pr1");
         pages[1] = document.getElementById("Pr2");
         pages[2] = document.getElementById("Pr3");
+        // change max
+        if(side == "left" && num != 0){
+            num -= 1;
+        }else if(side == "right" && num != 2){
+            num += 1;
+        }
     }
+
+    console.log(num);
     
     for(var i=0; i < pages.length; i++){
-        if(i == num-1){
-            pages[i].style.display = "inline-block";
+        if(i == num){
+            pages[i].style.display = "contents";
         }else{
             pages[i].style.display = "none";
         }

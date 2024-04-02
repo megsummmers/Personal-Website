@@ -145,7 +145,7 @@ body {
 .prRight{
     width: 40%;
     margin: 2.5%;
-    margin-top: 8rem;
+    margin-top: 6rem;
     float: right;
     text-align: left;
     overflow-wrap: scroll;
@@ -155,6 +155,7 @@ body {
     font-size: 1.2rem;
     background-color: #EAE2ED;
     padding: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .prBtn {
@@ -162,12 +163,16 @@ body {
     width: 4rem;
     border: none;
     border-radius: 1.5rem;
-    font-size: 5rem;
+    font-size: 2.5rem;
     background-color: #AB89B5;
+    text-align: center;
     color: white;
-    padding: 1.5rem;
-    margin: 0.5rem;
-    margin-left: 4rem;
+    margin-right: 2rem;
+}
+
+.prBtn:hover {
+    background-color: #e4ccec;
+    color: #AB89B5;
 }
 
 .prFloatBtn{
@@ -178,6 +183,16 @@ body {
     font-size: 3rem;
     background-color: white;
     color: #ab89b5;
+}
+
+.prFloatBtn:hover{
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    background-color: white;
+    color: #593b62;
 }
 
 .prTitle {
@@ -202,6 +217,7 @@ body {
 .bigBox{
     background-color: white;
     height: 50rem;
+    border-radius: 1rem;
     flex-basis: 100rem;
     flex-shrink: 0;
     flex-grow: 0;
