@@ -65,7 +65,7 @@ body {
 .portfolio {
     text-align: left;
     height: 90%;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .Hscroll {
@@ -203,8 +203,8 @@ body {
 
 .projects {
     text-align: left;
-    height: 85%;
-    width: 50rem;
+    height: 90%;
+    overflow-y: hidden;
 }
 
 .smallBox{

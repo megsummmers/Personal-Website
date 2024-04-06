@@ -1,6 +1,7 @@
 //variables
 let page = 1;
 let num = 0;
+let currentNum = 1;
 
 // hide ground after scrolling down
 window.addEventListener("scroll", function(){
@@ -90,6 +91,26 @@ function previewJump(type, num){
     console.log(":)");
     window.scrollTo (0, 1500);
     changeProject(type, num);
+}
+
+function changeSection(num){
+    switch(num){
+        case 1:
+            document.getElementById("Hscroll").scrollLeft = 0;
+            break;
+        case 2:
+            if(currentNum == 1){
+                document.getElementById("Hscroll").scrollLeft += 2000;
+            } else if(currentNum == 3){
+                document.getElementById("Hscroll").scrollLeft -= 2000;
+            }
+            
+            break;
+        case 3:
+            document.getElementById("Hscroll").scrollLeft += 3000;
+            break;
+    }
+    currentNum = num;
 }
 
 function changeProject(type, side){
