@@ -13,11 +13,31 @@ window.addEventListener("keydown", function(){
             this.document.getElementById("ground").style.display = "none";
         }
     }
+
     if(page == 2){
         if(this.scrollY >= 1200 && this.scrollX >= scrollx){
             document.getElementById("scrollH").scrollLeft += 950;
         } else if(this.scrollY >= 1200 && this.scrollX <= scrollx){
             document.getElementById("scrollH").scrollLeft += 950;
+        }
+    }
+}, false);
+
+window.addEventListener("keydown", function(event){
+    if(this.scrollY <= 10){
+        switch(event.key){
+            case "ArrowLeft":
+                if(page > 1 && page <= 4){
+                    page -= 1;
+                    moveCircle(page);
+                }
+                break;
+            case "ArrowRight":
+                if(page >= 1 && page < 4){
+                    page += 1;
+                    moveCircle(page);
+                }
+                break;
         }
     }
 }, false);
@@ -64,6 +84,26 @@ function previewJump(type, num){
     console.log(":)");
     window.scrollTo (0, 1500);
     changeProject(type, num);
+}
+
+function changeSection(num){
+    switch(num){
+        case 1:
+            document.getElementById("Hscroll").scrollLeft = 0;
+            break;
+        case 2:
+            if(currentNum == 1){
+                document.getElementById("Hscroll").scrollLeft += 2000;
+            } else if(currentNum == 3){
+                document.getElementById("Hscroll").scrollLeft -= 2000;
+            }
+            
+            break;
+        case 3:
+            document.getElementById("Hscroll").scrollLeft += 3000;
+            break;
+    }
+    currentNum = num;
 }
 
 function changeProject(type, side){
