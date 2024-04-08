@@ -67,20 +67,6 @@ function previewJump(type, num){
     changeProject(type, num);
 }
 
-function changeSection(num){
-    if(currentNum > num){
-        document.getElementById("topScroll").scrollLeft -= 2160*(currentNum-num);
-    } else if(currentNum < num){
-        document.getElementById("topScroll").scrollLeft += 2160*(num-currentNum);
-    }
-    currentNum = num;
-}
-
-function changeSectionY(direction){
-    document.getElementById("topMenu").style.display = "none";
-
-}
-
 function changeProject(type, side){
     var pages = [];
 
