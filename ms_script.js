@@ -2,11 +2,23 @@
 let page = 1;
 let num = 0;
 let currentNum = 1;
+const abtScroll = document.getElementById("AboutSec");
 
-// hide ground after scrolling down
-window.addEventListener("scroll", function(){
-    let scrollx = this.scrollX;
-    //console.log(this.scrollY);
+function scrollH(){
+    console.log("1");
+    if(document.scrollLeft >= 0 && document.scrollLeft <= 2160){
+        console.log("1");
+    } else if(this.scrollLeft > 2160 && this.scrollLeft <= 2160*2){
+        console.log("2");
+    } else if(this.scrollX > 2160*2 && this.scrollX <= 2160*3){
+        console.log("3");
+    } else if(this.scrollX > 2160*3 && this.scrollX <= 2160*4){
+        console.log("4");
+    }
+}
+
+document.getElementById("AboutSec").addEventListener("keydown", function(){
+    console.log(":)");
     if(page != 1){
         if(this.scrollY <= 10){
             this.document.getElementById("ground").style.display = "inline";
@@ -14,7 +26,6 @@ window.addEventListener("scroll", function(){
             this.document.getElementById("ground").style.display = "none";
         }
     }
-
     if(page == 2){
         if(this.scrollY >= 1200 && this.scrollX >= scrollx){
             document.getElementById("scrollH").scrollLeft += 950;
@@ -24,67 +35,30 @@ window.addEventListener("scroll", function(){
     }
 }, false);
 
-window.addEventListener("keydown", function(event){
-    if(this.scrollY <= 10){
-        switch(event.key){
-            case "ArrowLeft":
-                if(page > 1 && page <= 4){
-                    page -= 1;
-                    moveCircle(page);
-                }
-                break;
-            case "ArrowRight":
-                if(page >= 1 && page < 4){
-                    page += 1;
-                    moveCircle(page);
-                }
-                break;
-        }
-    }
-}, false);
-
 function moveCircle(pageNum){
-    switch(pageNum){
-        case 1:
+    $(document).ready(function () {
+        var $horizontal = $('#horizontal');
+    
+        $(window).scroll(function () {
+            var s = $(this).scrollTop(),
+                d = $(document).height(),
+                c = $(this).height();
+    
+            scrollPercent = (s / (d - c));
+    
+            var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+    
+            $horizontal.css({
+                'left': position
+            });
+        });
+    });
+
         document.getElementById("circle").style.left = "1%";
         document.getElementById("name").style.display = "contents";
         document.getElementById("PortfolioSec").style.display = "none";
         document.getElementById("ProjectSec").style.display = "none";
         document.getElementById("AboutSec").style.display = "none";
-        page = 1;
-        break;
-        case 2: 
-        document.getElementById("circle").style.left = "30%";
-        document.getElementById("name").style.display = "none";
-        document.getElementById("PortfolioSec").style.display = "contents";
-        document.getElementById("ProjectSec").style.display = "none";
-        document.getElementById("AboutSec").style.display = "none";
-        page = 2;
-        break;
-        case 3: 
-        document.getElementById("circle").style.left = "60%";
-        document.getElementById("name").style.display = "none";
-        document.getElementById("PortfolioSec").style.display = "none";
-        document.getElementById("ProjectSec").style.display = "contents";
-        document.getElementById("AboutSec").style.display = "none";
-        page = 3;
-        break;
-        case 4: 
-        document.getElementById("circle").style.left = "90%";
-        document.getElementById("name").style.display = "none";
-        document.getElementById("PortfolioSec").style.display = "none";
-        document.getElementById("ProjectSec").style.display = "none";
-        document.getElementById("AboutSec").style.display = "contents";
-        page = 4;
-        break;
-    }
-}
-
-function scrollH(num){
-    switch(num){
-        case 1:
-            document.getElementById("scrollH").scrollLeft += 950;
-    }
 }
 
 function previewJump(type, num){
@@ -94,23 +68,17 @@ function previewJump(type, num){
 }
 
 function changeSection(num){
-    switch(num){
-        case 1:
-            document.getElementById("Hscroll").scrollLeft = 0;
-            break;
-        case 2:
-            if(currentNum == 1){
-                document.getElementById("Hscroll").scrollLeft += 2000;
-            } else if(currentNum == 3){
-                document.getElementById("Hscroll").scrollLeft -= 2000;
-            }
-            
-            break;
-        case 3:
-            document.getElementById("Hscroll").scrollLeft += 3000;
-            break;
+    if(currentNum > num){
+        document.getElementById("topScroll").scrollLeft -= 2160*(currentNum-num);
+    } else if(currentNum < num){
+        document.getElementById("topScroll").scrollLeft += 2160*(num-currentNum);
     }
     currentNum = num;
+}
+
+function changeSectionY(direction){
+    document.getElementById("topMenu").style.display = "none";
+
 }
 
 function changeProject(type, side){
