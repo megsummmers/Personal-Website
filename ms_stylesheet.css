@@ -73,7 +73,7 @@ body {
 
 .topScroll {
     display: inline;
-    flex: 0 0 125em;
+    flex: 0 0 120em;
     overflow-y: scroll;
     margin-top: 5em;
 }
@@ -251,7 +251,7 @@ body {
 
 .bigBox{
     background-color: white;
-    height: 50rem;
+    height: 45rem;
     border-radius: 1rem;
     flex-basis: 100rem;
     flex-shrink: 0;
@@ -259,7 +259,7 @@ body {
     margin-bottom: 7rem;
     margin-left: 12rem;
     margin-right: 12rem;
-    padding: 2rem;
+    padding-bottom: 2rem;
 }
 
 .txtbox {
