@@ -95,6 +95,7 @@ body {
     font-family: "Berkshire Swash", serif;
     font-size: 5rem;
     text-align: left;
+    margin-top: auto;
 }
 
 .portfolio {
@@ -179,7 +180,6 @@ body {
 .prRight{
     width: 40%;
     margin: 2.5%;
-    margin-top: 6rem;
     float: right;
     text-align: left;
     overflow-wrap: scroll;
