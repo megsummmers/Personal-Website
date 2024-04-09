@@ -45,21 +45,21 @@ function previewJump(type, num){
 function changeSection(num){
     switch(num){
         case 1:
-            document.getElementById("Hscroll").scrollLeft = 0;
+            document.getElementById("GameSec").style.display = "block";
+            document.getElementById("ModelSec").style.display = "none";
+            document.getElementById("DesignSec").style.display = "none";
             break;
         case 2:
-            if(currentNum == 1){
-                document.getElementById("Hscroll").scrollLeft += 2000;
-            } else if(currentNum == 3){
-                document.getElementById("Hscroll").scrollLeft -= 2000;
-            }
-            
+            document.getElementById("GameSec").style.display = "none";
+            document.getElementById("ModelSec").style.display = "block";
+            document.getElementById("DesignSec").style.display = "none";
             break;
         case 3:
-            document.getElementById("Hscroll").scrollLeft += 3000;
+            document.getElementById("GameSec").style.display = "none";
+            document.getElementById("ModelSec").style.display = "none";
+            document.getElementById("DesignSec").style.display = "block";
             break;
     }
-    currentNum = num;
 }
 
 function changeAbt(num){

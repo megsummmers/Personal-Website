@@ -21,7 +21,7 @@
           <img src="images/Name_logo.png" alt="" style="width: 100em;">
         </div>
         <!--------------------- ABOUT ME SECTION ---------------------->
-        <div id="AboutSec" class="topScroll">
+        <div id="AboutSec" class="topScroll" style="overflow-y: hidden;">
           <div class="about">
             <div class="abLeft">
               <img src="images/Picture.jpg" alt="" style="width: 30rem; border-bottom: 2rem #EAE2ED solid; border-right: 2rem #EAE2ED solid">
@@ -67,7 +67,9 @@
           <div class="portfolio" style="margin-bottom: 10rem;">
             <div class="pfLeft">
               <p class="name">Portfolio</p>
-              <p class="txtbox">A collection of completed projects and prototypes.</p>
+              <p class="txtbox">A collection of completed projects and prototypes.
+                <br><br>Scroll down to see more
+              </p>
             </div>
             <div class="pfRight">
               <div class="smallBox">
@@ -89,7 +91,7 @@
               <button id="menuBtn" onclick="changeSection(3)">GRAPHIC</button>
             </div>
               <!------------------- VIDEO GAME SECTION ------------------->
-              <div class="bigBox">
+              <div class="bigBox" id="GameSec">
                 <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="PfGa1" style="display: contents">
                   <div class="prLeft">
@@ -113,8 +115,8 @@
                       ​<br><br>
                       On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
                     </p>
-                    <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
                     <button class="prBtn"><i class="fa fa-play"></i></button>
+                    <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
                   </div>
                 </div>
                 <div id="PfGa2" style="display: none">
@@ -135,9 +137,9 @@
                   <div class="prRight">
                     <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
                     <p class="prText">
-                      Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                      ​<br><br>
-                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
+                      No Clue is a point-and-click game that sees the player trying to hide evidence in the houses of four infamous horror villains, an alien, a cult leader, a serial killer, and a hitman. You have two minutes to find all the evidence scattered around their unique houses in order to prove their innocence and keep them out of jail.
+                      <br><br>
+                      This was a group project with the challenge of making a game with only the mouse. We really tried to push the story in this one due to the limited controls. We decided to make the game ironic as you need to prove the innocence of four characters who are clearly suspicious and have bad intentions.
                     </p>
                     <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
                     <button class="prBtn"><i class="fa fa-play"></i></button>
@@ -160,10 +162,9 @@
                   <div class="prRight">
                     <h2>Created in Unity/C# in Collaboration with Luka  & Che Tan</h2>
                     <p class="prText">
-                      Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                      ​<br><br>
-                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
-                    </p>
+                      Re-boot was a game created from the theme of rebirth.We decided to create a game about a robot trying to escape the laboratory it was made in. Using the robot's ability to shed its body and respawn in a new one the player will solve puzzles to escape. The Player will have to use their head to get out of labratory and free the robot before it runs out of body doubles!
+                      <br><br>
+​                      I contributed the code to this game, having coded the entire thing in Unity and C#. The art was provided by Luka Akatsu and the level/sound design provided by Che Tan</p>
                     <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
                     <button class="prBtn"><i class="fa fa-play"></i></button>
                   </div>
@@ -184,10 +185,13 @@
                     </div>
                   </div>
                   <div class="prRight">
-                    <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                      ​<br><br>
-                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-                  </div>
+                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
+                    <p class="prText">Barn Gambles is a game made around the idea gamebling and how quickly it can become an addiction. Play along as you train your horse and race it along your many rivals to earn money. Continue to invest in your horse's statistics to earn more prize moeny and beat your deadly rival, Gian Pasticcio.
+                      <br><br>
+                      We decided to focus in on horse gamebling as its the gambline form most associated with statistics. Instead of relying solely on luck, horse gamebling incorperates the status of the horse themselves into the equation. We also wanted our game to be light hearted and fun take on a serious issues to bring a larger audience.</p>
+                      <button class="prBtn"><i class="fa fa-play"></i></button>
+                      <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
+                   </div>
                 </div>
                 <div id="PfGa5" style="display: none">
                   <div class="prLeft">
@@ -202,15 +206,18 @@
                     </div>
                   </div>
                   <div class="prRight">
-                    <p class="prText">Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                      ​<br><br>
-                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.</p>
-                  </div>
+                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
+                    <p class="prText">Grow your city is a 2D top-down game centred around resource management and maintaining the health of your worlds environment. The core gameplay consists of managing and balancing your city's resources, population and the well-being of the environment around you. Throughout the game, the player will also be faced with scenarios meant to mimic real-life issues to judge your reaction. In the end, your score will reflect your choices throughout the game and how your priorities would reflect in real life.
+                      <br><br>
+                      I set out to explore the question, "In the age of constant media intake, how conscious are we of our effect on the environment and what we can do to help?" The goal is to push the players to make decisions and live through the consequences to learn about their environmental impact. The "best" score of the game is achieving the perfect balance of evolving your town and increasing your population while still maintaining the health of world you live in. </p>
+                      <button class="prBtn"><i class="fa fa-play"></i></button>
+                      <button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button>
+                   </div>
                 </div>
                 <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!-------------------- 3D MODELLING SECTION -------------------->
-              <div class="bigBox" style="display: none;">
+              <div class="bigBox" id="ModelSec" style="display: none;">
                 <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="Pf3D1" style="display: contents">
                   <div class="prLeft">
@@ -241,7 +248,7 @@
                 <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!--------------- GRAPHIC DESIGN SECTION ------------->
-              <div class="bigBox" style="margin-bottom: 10rem;display: none">
+              <div class="bigBox" id="DesignSec" style="margin-bottom: 10rem;display: none">
                 <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="PfGr1" style="display: contents">
                   <div class="prLeft">
