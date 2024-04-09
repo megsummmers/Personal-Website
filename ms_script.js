@@ -12,28 +12,14 @@ window.addEventListener("scroll", function(event){
     }
 }, false);
 
-function moveCircle(pageNum){
-    switch(pageNum){
-        case 1:
-            document.getElementById("circle").style.left = "1%";
-            document.getElementById("name").style.display = "contents";
-            document.getElementById("AboutSec").style.display = "none";
-            document.getElementById("PortfolioSec").style.display = "none";
-            break;
-        case 2:
-            document.getElementById("circle").style.left = "50%";
-            document.getElementById("name").style.display = "none";
-            document.getElementById("AboutSec").style.display = "contents";
-            document.getElementById("PortfolioSec").style.display = "none";
-            break;
-        case 3:
-            document.getElementById("circle").style.left = "90%";
-            document.getElementById("name").style.display = "none";
-            document.getElementById("AboutSec").style.display = "none";
-            document.getElementById("PortfolioSec").style.display = "contents";
-            break;
+function moveCircle(num){
+    console.log(":)");
+    if(currentNum > num){
+        document.getElementById("topScroll").scrollLeft -= 2000*(currentNum-num);
+    } else if(currentNum < num){
+        document.getElementById("topScroll").scrollLeft += 2000*(num-currentNum);
     }
-        
+    currentNum = num; 
 }
 
 function previewJump(type, num){
