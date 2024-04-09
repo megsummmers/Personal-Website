@@ -2,43 +2,13 @@
 let page = 1;
 let num = 0;
 let currentNum = 1;
-const abtScroll = document.getElementById("AboutSec");
+const Hscroll = document.getElementById("Hscroll");
 
-window.addEventListener("keydown", function(){
-    console.log(":)");
-    if(page != 1){
-        if(this.scrollY <= 10){
-            this.document.getElementById("ground").style.display = "inline";
-        } else {
-            this.document.getElementById("ground").style.display = "none";
-        }
-    }
-
-    if(page == 2){
-        if(this.scrollY >= 1200 && this.scrollX >= scrollx){
-            document.getElementById("scrollH").scrollLeft += 950;
-        } else if(this.scrollY >= 1200 && this.scrollX <= scrollx){
-            document.getElementById("scrollH").scrollLeft += 950;
-        }
-    }
-}, false);
-
-window.addEventListener("keydown", function(event){
-    if(this.scrollY <= 10){
-        switch(event.key){
-            case "ArrowLeft":
-                if(page > 1 && page <= 4){
-                    page -= 1;
-                    moveCircle(page);
-                }
-                break;
-            case "ArrowRight":
-                if(page >= 1 && page < 4){
-                    page += 1;
-                    moveCircle(page);
-                }
-                break;
-        }
+window.addEventListener("scroll", function(event){
+    if(this.scrollY >= 10 && this.scrollY <= 1000){
+        this.document.getElementById("divider").style.width = "85%";
+    } else {
+        this.document.getElementById("divider").style.width = "100%";
     }
 }, false);
 
@@ -49,33 +19,19 @@ function moveCircle(pageNum){
             document.getElementById("name").style.display = "contents";
             document.getElementById("AboutSec").style.display = "none";
             document.getElementById("PortfolioSec").style.display = "none";
-            document.getElementById("ProjectSec").style.display = "none";
-            page = 1;
             break;
         case 2:
-            document.getElementById("circle").style.left = "30%";
+            document.getElementById("circle").style.left = "50%";
             document.getElementById("name").style.display = "none";
             document.getElementById("AboutSec").style.display = "contents";
             document.getElementById("PortfolioSec").style.display = "none";
-            document.getElementById("ProjectSec").style.display = "none";
-            page = 1;
             break;
         case 3:
-            document.getElementById("circle").style.left = "60%";
-            document.getElementById("name").style.display = "none";
-            document.getElementById("AboutSec").style.display = "none";
-            document.getElementById("PortfolioSec").style.display = "contents";
-            document.getElementById("ProjectSec").style.display = "none";
-            page = 1;
-            break;
-        case 4:
             document.getElementById("circle").style.left = "90%";
             document.getElementById("name").style.display = "none";
             document.getElementById("AboutSec").style.display = "none";
-            document.getElementById("PortfolioSec").style.display = "none";
-            document.getElementById("ProjectSec").style.display = "contents";
-            page = 1;
-            break;  
+            document.getElementById("PortfolioSec").style.display = "contents";
+            break;
     }
         
 }
@@ -104,6 +60,23 @@ function changeSection(num){
             break;
     }
     currentNum = num;
+}
+
+function changeAbt(num){
+    switch(num){
+        case 1: document.getElementById("Ab1").style.display = "block";
+        document.getElementById("Ab2").style.display = "none";
+        document.getElementById("Ab3").style.display = "none";
+        break;
+        case 2: document.getElementById("Ab1").style.display = "none";
+        document.getElementById("Ab2").style.display = "block";
+        document.getElementById("Ab3").style.display = "none";
+        break;
+        case 3: document.getElementById("Ab1").style.display = "none";
+        document.getElementById("Ab2").style.display = "none";
+        document.getElementById("Ab3").style.display = "block";
+        break;
+    }
 }
 
 function changeProject(type, side){
