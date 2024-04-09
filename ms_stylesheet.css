@@ -73,7 +73,7 @@ body {
 
 .topScroll {
     display: inline;
-    flex: 0 0 120em;
+    flex: 0 0 100vw;
     overflow-y: scroll;
     margin-top: 5em;
 }
@@ -104,22 +104,22 @@ body {
 }
 
 .Hscroll {
-    width: 100%;
+    width: 100vw;
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
 }
 
 .pfLeft{
-    width: 60%;
-    margin: 2.5%;
+    width: 60vw;
+    margin: 2.5vw;
     float: left;
     text-align: left;
 } 
 
 .pfRight{
-    width: 30%;
-    margin: 2.5%;
+    width: 30vw;
+    margin: 2.5vw;
     float: right;
     text-align: left;
 }
@@ -127,11 +127,11 @@ body {
 .about {
     display: flex;
     text-align: left;
-    height: 85%;
+    height: 85vh;
 }
 
 .abLeft{
-    width: 30rem;
+    width: 40vm;
     margin: 2.5%;
     margin-left: 5%;
     float: left;
