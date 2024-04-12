@@ -75,11 +75,6 @@ function moveCircle(num){
     }
 }
 
-function previewJump(type, num){
-    window.scrollTo (0, 1500);
-    changeProject(type, num);
-}
-
 function changeSection(num){
     
     switch(num){
@@ -99,8 +94,7 @@ function changeSection(num){
             document.getElementById("DesignSec").style.display = "block";
             break;
     }
-
-    
+    num = 1;
 }
 
 function changeAbt(num){
@@ -120,8 +114,15 @@ function changeAbt(num){
     }
 }
 
-function changeProject(type, side){
 
+function previewJump(type, num, section){
+    document.getElementById("PortfolioSec").scrollTop += screenH*2;
+    changeSection(section);
+    changeProject(type, "none");
+    num = num;
+}
+
+function changeProject(type, side){
     if(type == 'PfGa'){
         var pages = [5];
         pages[0] = document.getElementById("PfGa1");

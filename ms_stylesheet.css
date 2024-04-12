@@ -99,7 +99,7 @@ body {
     font-family: "Berkshire Swash", serif;
     font-size: 5rem;
     text-align: left;
-    margin-top: auto;
+    margin-top: 5vh;
 }
 
 .portfolio {
@@ -166,7 +166,9 @@ body {
 }
 
 .topText{
-    margin-left: 5vw;;
+    margin-left: 5vw;
+    text-align: center;
+
 }
 
 .pfLeft{
@@ -244,6 +246,8 @@ body {
 
 .secBtn {
     background-color: #EAE2ED;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
     border: none;
     width: 20vw;
     height: 4vh;
@@ -252,17 +256,17 @@ body {
     margin-right: 2vw;
     margin-left: 2.5vw;
     margin-top: 1vh;
-    color:#7f528d;
+    color:#48314E;
 }
 
 .secBtn:hover {
     background-color: #e2d2e7;
-    color: #48314E;
+    color: #7f528d;
 }
 
 .secBtn:focus {
     background-color: #e2d2e7;
-    color: #48314E;
+    color: #7f528d;
 }
 
 .previews{
@@ -274,8 +278,9 @@ body {
     margin: 2vw;
     padding: 2vw;
     border-radius: 1vw;
-    height: 25vw;
+    height: 27vw;
     width: 30vw;
+    text-align: center;
 }
 
 .medBox{
@@ -295,10 +300,9 @@ body {
     flex-basis: 100rem;
     flex-shrink: 0;
     flex-grow: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
     margin-left: 12vw;
     margin-right: 12vw;
-    padding-bottom: 2vw;
 }
 
 .txtbox {
@@ -330,10 +334,12 @@ body {
 }
 
 .smallImg{
-    width: 20rem;
+    width: 22vw;
+    margin-top: 1vh;
+    object-fit: fill;
 }
 .bigImg{
-    width: 50rem;
+    width: 35vw;
 }
 
 .imgScroll{
