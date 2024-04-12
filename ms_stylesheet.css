@@ -32,7 +32,7 @@ body {
     border-left: solid 0.1rem;
     font-family: "Poppins", sans-serif;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
@@ -90,7 +90,7 @@ body {
 
 .name{
     font-family: "Berkshire Swash", serif;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left;
     margin: auto;
     margin-top: 5vh;
@@ -98,7 +98,7 @@ body {
 
 .smallTitle{
     font-family: "Berkshire Swash", serif;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: left;
     margin-top: 5vh;
 }
@@ -143,7 +143,7 @@ body {
 }
 
 .abtText {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 1vw;
 }
 
@@ -152,7 +152,7 @@ body {
     width: 8vh;
     border: none;
     border-radius: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: #AB89B5;
     color: white;
     padding: 1rem;
@@ -190,7 +190,7 @@ body {
 
 .pfText {
     height: 45vh;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: #EAE2ED;
     padding: 2vh;
     margin-bottom: 1vh;
@@ -248,7 +248,7 @@ body {
 .secBtn {
     background-color: #EAE2ED;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
     width: 20vw;
     height: 4vh;
@@ -277,7 +277,8 @@ body {
 .smallBox{
     background-color: white;
     margin: 2vw;
-    padding: 2vw;
+    padding: 1.5vw;
+    padding-top: 1vw;
     border-radius: 1vw;
     height: 27vw;
     width: 30vw;
