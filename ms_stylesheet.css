@@ -47,6 +47,7 @@ body {
 .simpleMenu {
     width: 25vw;
     margin: 1vw auto;
+    margin-top: 0;
     padding: 1vw;
     height: 5vh;
     display: block;
@@ -60,17 +61,17 @@ body {
     height: 1vw;
     width: 1vw;
     margin-right: 3vw;
-    background-color: #AB89B5;
+    background-color: #C9B0D1;
     border: none;
     border-radius: 2vw;
 }
 
 .simpleMenuBtn:hover{
-    background-color: #7f528d;
+    background-color: #9854c2;
 }
 
-.simpleMenuBtn:active{
-    background-color: #7f528d;
+.simpleMenuBtn:focus{
+    background-color: #8e69a5;
 }
 
 .topScroll {
@@ -191,7 +192,7 @@ body {
     height: 45vh;
     font-size: 1.2rem;
     background-color: #EAE2ED;
-    padding: 1vh;
+    padding: 2vh;
     margin-bottom: 1vh;
     overflow-y: scroll;
 }
@@ -286,10 +287,12 @@ body {
 .medBox{
     background-color: white;
     margin: 2vw;
+    margin-bottom: 0;
     padding: 2vw;
     border-radius: 1vw;
     height: 25vw;
     width: 50vw;
+    overflow-y: scroll;
 }
 
 .bigBox{
@@ -336,7 +339,7 @@ body {
 .smallImg{
     width: 22vw;
     margin-top: 1vh;
-    object-fit: fill;
+    object-fit: contain;
 }
 .bigImg{
     width: 35vw;
