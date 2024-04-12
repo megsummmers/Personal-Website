@@ -9,7 +9,7 @@
     <title>Meg's Weekly Responses</title>
   </head>
   <body id="body">
-    <div class="menu" id="topMenu" style="position: absolute; left: 30em;">
+    <div class="menu" id="topMenu" style="position: absolute; left: 30vw;">
       <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
       <button id="menuBtn" onclick="moveCircle(2)">ABOUT ME</button>
       <button id="menuBtn" onclick="moveCircle(3)">PORTFOLIO</button>
@@ -18,9 +18,249 @@
       <div class="Hscroll" id="topScroll">
         <!--------------------- TITLE SECTION ----------------------->
         <div id="name" class="topScroll" style="overflow-y: hidden;text-align: center;margin:auto;height: 100%;">
-          <img src="images/Name_logo.png" alt="" style="width: 80em;margin-top: 10rem;">
+          <img src="images/Name_logo.png" alt="" style="width: 65vw;margin-top: 10vh;">
         </div>
-        <!--------------------- ABOUT ME SECTION ---------------------->
+        <!--------------------- PORTFOLIO SECTION ---------------------->
+        <div id="PortfolioSec" class="topScroll" style="flex: 0, 0, 125vw;">
+          <!--------------------- TOP PAGE ---------------------->
+          <div class="portfolio" style="margin-bottom: 10rem;">
+            <div class="topText">
+              <p class="name">Portfolio</p>
+              <p>A collection of completed projects and prototypes.</p>
+            </div>
+            <div class="previews">
+              <div class="smallBox">
+                <h2>Game Development</h2>
+                <p>Games I have developed throughout the years. Links to download and/or play on Itch.io will be available for each</p>
+                <h2>Featured Project</h2>
+                <h3>Winter Break:</h3>
+                <img src="images/WB_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 1)">
+              </div>
+              <div class="smallBox">
+                <h2>3D Modelling</h2>
+                <p>Projects I've done in Blender 3D modelling software. </p>
+                <h2>Featured Project</h2>
+                <h3>Winter Break:</h3>
+                <img src="images/NC_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 2)">
+              </div>
+              <div class="smallBox">
+                <h2>Experimental projects</h2>
+                <p>Games I have developed throughout the years. Links to download and/or play on Itch.io will be available for each</p>
+                <h2>Featured Project</h2>
+                <h3>Winter Break:</h3>
+                <img src="images/NC_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 2)">
+              </div>
+            </div>
+          </div>
+          <div class="portfolio" style="overflow-x: clip;">
+            <!--------------------- BOTTOM PAGE ---------------------->
+            <div style="display: flex; flex: auto;width: 125vw">
+              <div id="divider" style="width: 50vw;"></div>
+              <div id="divider" style="width: 50vw;left: 25vw"></div>
+            </div>
+            <div class="sections">
+              <button id="secBtn" onclick="changeSection(1)" style="background-color: #e2d2e7;">GAMES</button>
+              <button id="secBtn" onclick="changeSection(2)">3D WORK</button>
+              <button id="secBtn" onclick="changeSection(3)">GRAPHIC</button>
+            </div>
+              <!------------------- VIDEO GAME SECTION ------------------->
+              <div class="bigBox" id="GameSec" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="PfGa1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Percy Ngyuen & Angel Cella Cenerini</h2>
+                    <p class="pfText">
+                      Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                      ​<br><br>
+                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
+                    </p>
+                    <a href="https://megsumm.itch.io/winter-break"><button class="pfBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="PfGa2" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">No Clue</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
+                    <p class="pfText">
+                      No Clue is a point-and-click game that sees the player trying to hide evidence in the houses of four infamous horror villains, an alien, a cult leader, a serial killer, and a hitman. You have two minutes to find all the evidence scattered around their unique houses in order to prove their innocence and keep them out of jail.
+                      <br><br>
+                      This was a group project with the challenge of making a game with only the mouse. We really tried to push the story in this one due to the limited controls. We decided to make the game ironic as you need to prove the innocence of four characters who are clearly suspicious and have bad intentions.
+                    </p>
+                    <a href="https://megsumm.itch.io/no-clue"><button class="pfBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
+                    
+                  </div>
+                </div>
+                <div id="PfGa3" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Reboot</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Luka Akatseru & Che Tan</h2>
+                    <p class="pfText">
+                      Re-boot was a game created from the theme of rebirth.We decided to create a game about a robot trying to escape the laboratory it was made in. Using the robot's ability to shed its body and respawn in a new one the player will solve puzzles to escape. The Player will have to use their head to get out of labratory and free the robot before it runs out of body doubles!
+                      <br><br>I contributed the code to this game, having coded the entire thing in Unity and C#. The art was provided by Luka Akatseru and the level/sound design provided by Che Tan</p>
+                    <a href="https://megsumm.itch.io/reboot"><button class="pfBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="PfGa4" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Barn Gambles</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Angel Cella Cenerini</h2>
+                    <p class="pfText">Barn Gambles is a game made around the idea gamebling and how quickly it can become an addiction. Play along as you train your horse and race it along your many rivals to earn money. Continue to invest in your horse's statistics to earn more prize moeny and beat your deadly rival, Gian Pasticcio.
+                      <br><br>
+                      We decided to focus in on horse gamebling as its the gambline form most associated with statistics. Instead of relying solely on luck, horse gamebling incorperates the status of the horse themselves into the equation. We also wanted our game to be light hearted and fun take on a serious issues to bring a larger audience.</p>
+                      <a href="https://megsumm.itch.io/barn-gambles"><button class="pfBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
+                      
+                  </div>
+                </div>
+                <div id="PfGa5" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Grow your city</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# As a research project about environment awareness</h2>
+                    <p class="pfText">Grow your city is a 2D top-down game centred around resource management and maintaining the health of your worlds environment. The core gameplay consists of managing and balancing your city's resources, population and the well-being of the environment around you. Throughout the game, the player will also be faced with scenarios meant to mimic real-life issues to judge your reaction. In the end, your score will reflect your choices throughout the game and how your priorities would reflect in real life.
+                      <br><br>
+                      I set out to explore the question, "In the age of constant media intake, how conscious are we of our effect on the environment and what we can do to help?" The goal is to push the players to make decisions and live through the consequences to learn about their environmental impact. The "best" score of the game is achieving the perfect balance of evolving your town and increasing your population while still maintaining the health of world you live in. </p>
+                      <a href="https://megsumm.itch.io/grow-your-city"><button class="pfBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
+                      
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+              <!-------------------- 3D MODELLING SECTION -------------------->
+              <div class="bigBox" id="ModelSec" style="display: none;">
+                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="Pf3D1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">A lost world</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/LC_cave1.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_cave2.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_cave3.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside1.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside2.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside3.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside4jpeg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender from Jan to April 2023</h2>
+                    <p class="pfText">
+                      A lost world was a project to create a 3D environment based on a fantasy world. The viewer is walked through 3 small tableau environments from a different world as they attempt to deciper what happened to the lost world.
+                      <br><br>
+                      Explore through the abandonned mine shaft overrun with crystals, the flower field, the ruins of a temple to make it see the extent of the world at the cliff's edge. This project took a full semster to make and pushed my knowledge of blender and textures. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+              <!--------------- GRAPHIC DESIGN SECTION ------------->
+              <div class="bigBox" id="DesignSec" style="margin-bottom: 10rem;display: none">
+                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="PfGr1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Grocery Prices Zine</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/zine_cover1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_cover2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_full1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_full2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_full3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_inside1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_inside2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Procreate and printed to create a physical copy</h2>
+                    <p class="pfText">
+                      A set of 3 miniature zines created in response to the rising grocery prices of this decade. They gives tips and tricks on how to get around inflation by shopping smarter and making meals that use all your ingredients. This zine is meant for students and/or young adults to help them navigate a the new world where the prices to eat has skyrockected.
+                      ​<br><br>
+                      Illustrated on Procreate, these zines were designed to be printed out and used a as pamphlets for universities and other youth spaces. They use only 1 colour to reduce the printing costs.
+                    </p>
+                  </div>
+                </div>
+                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div style="display: flex; flex: auto;">
+              <div id="divider" style="width: 125vw;"></div>
+            </div>
+          </div>
+          <!--------------------- ABOUT ME SECTION ---------------------->
         <div id="AboutSec" class="topScroll" style="overflow-y: hidden;">
           <div class="about">
             <div class="abLeft">
@@ -28,7 +268,7 @@
             </div>
             <div class="abRight">
               <p class="name">About the Artist</p>
-              <div class="smallBox" style="height: 35rem;">
+              <div class="medBox" style="height: 35rem;">
                 <div id="Ab1" style="display: none;">
                   <p class="abtText">My name is Margaret Summers and I am an upcoming game developer.
                     <br><br>I specialize in game development and throughout my studies I have learned to program in multiple languages for a range of different digital mediums and platforms. My passion is developing games and other digital media that immerse audiences in a new world of my own creation. Through the medium of games, I hope to make topics considered to be difficult more accessible in an entertaining and challenging way. <n>
@@ -69,237 +309,12 @@
             </div>
           </div>
         </div>
-        <!--------------------- PORTFOLIO SECTION ---------------------->
-        <div id="PortfolioSec" class="topScroll">
-          <!--------------------- TOP PAGE ---------------------->
-          <div class="portfolio" style="margin-bottom: 10rem;">
-            <div class="pfLeft">
-              <p class="name">Portfolio</p>
-              <p class="txtbox">A collection of completed projects and prototypes.
-                <br><br>Scroll down to see more
-              </p>
-            </div>
-            <div class="pfRight">
-              <div class="smallBox">
-                <h2>Winter Break</h2>
-                <img src="images/WB_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 1)">
-              </div>
-              <div class="smallBox">
-                <h2>No Clue</h2>
-                <img src="images/NC_title.png" alt="Placeholder" class="smallImg" onclick="previewJump('Pf', 2)">
-              </div>
-            </div>
-          </div>
-          <div id="dividerT" style="width: 85%;position: relative;"></div>
-          <div class="portfolio">
-            <!--------------------- BOTTOM PAGE ---------------------->
-            <div class="menu" style="position: sticky; top: 2rem; margin-top: 2rem; border: none;">
-              <button id="menuBtn" onclick="changeSection(1)">GAMES</button>
-              <button id="menuBtn" onclick="changeSection(2)">3D WORK</button>
-              <button id="menuBtn" onclick="changeSection(3)">GRAPHIC</button>
-            </div>
-              <!------------------- VIDEO GAME SECTION ------------------->
-              <div class="bigBox" id="GameSec">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="PfGa1" style="display: contents">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Unity/C# in Collaboration with Percy Ngyuen & Angel Cella Cenerini</h2>
-                    <p class="prText">
-                      Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
-                      ​<br><br>
-                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
-                    </p>
-                    <a href="https://megsumm.itch.io/winter-break"><button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
-                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
-                      <button class="prBtn"><i class="fa fa-play"></i></button>
-                    </a>
-                  </div>
-                </div>
-                <div id="PfGa2" style="display: none">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">No Clue</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
-                    <p class="prText">
-                      No Clue is a point-and-click game that sees the player trying to hide evidence in the houses of four infamous horror villains, an alien, a cult leader, a serial killer, and a hitman. You have two minutes to find all the evidence scattered around their unique houses in order to prove their innocence and keep them out of jail.
-                      <br><br>
-                      This was a group project with the challenge of making a game with only the mouse. We really tried to push the story in this one due to the limited controls. We decided to make the game ironic as you need to prove the innocence of four characters who are clearly suspicious and have bad intentions.
-                    </p>
-                    <a href="https://megsumm.itch.io/no-clue"><button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
-                    
-                  </div>
-                </div>
-                <div id="PfGa3" style="display: none">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Reboot</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
-                      <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
-                      <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
-                      <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
-                      <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
-                      <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Unity/C# in Collaboration with Luka Akatseru & Che Tan</h2>
-                    <p class="prText">
-                      Re-boot was a game created from the theme of rebirth.We decided to create a game about a robot trying to escape the laboratory it was made in. Using the robot's ability to shed its body and respawn in a new one the player will solve puzzles to escape. The Player will have to use their head to get out of labratory and free the robot before it runs out of body doubles!
-                      <br><br>
-​                      I contributed the code to this game, having coded the entire thing in Unity and C#. The art was provided by Luka Akatseru and the level/sound design provided by Che Tan</p>
-                    <a href="https://megsumm.itch.io/reboot"><button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
-                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
-                      <button class="prBtn"><i class="fa fa-play"></i></button>
-                    </a>
-                  </div>
-                </div>
-                <div id="PfGa4" style="display: none">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Barn Gambles</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Unity/C# in Collaboration with Angel Cella Cenerini</h2>
-                    <p class="prText">Barn Gambles is a game made around the idea gamebling and how quickly it can become an addiction. Play along as you train your horse and race it along your many rivals to earn money. Continue to invest in your horse's statistics to earn more prize moeny and beat your deadly rival, Gian Pasticcio.
-                      <br><br>
-                      We decided to focus in on horse gamebling as its the gambline form most associated with statistics. Instead of relying solely on luck, horse gamebling incorperates the status of the horse themselves into the equation. We also wanted our game to be light hearted and fun take on a serious issues to bring a larger audience.</p>
-                      <a href="https://megsumm.itch.io/barn-gambles"><button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
-                      
-                  </div>
-                </div>
-                <div id="PfGa5" style="display: none">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Grow your city</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
-                      <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
-                      <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Unity/C# As a research project about environment awareness</h2>
-                    <p class="prText">Grow your city is a 2D top-down game centred around resource management and maintaining the health of your worlds environment. The core gameplay consists of managing and balancing your city's resources, population and the well-being of the environment around you. Throughout the game, the player will also be faced with scenarios meant to mimic real-life issues to judge your reaction. In the end, your score will reflect your choices throughout the game and how your priorities would reflect in real life.
-                      <br><br>
-                      I set out to explore the question, "In the age of constant media intake, how conscious are we of our effect on the environment and what we can do to help?" The goal is to push the players to make decisions and live through the consequences to learn about their environmental impact. The "best" score of the game is achieving the perfect balance of evolving your town and increasing your population while still maintaining the health of world you live in. </p>
-                      <a href="https://megsumm.itch.io/grow-your-city"><button class="prBtn" style="padding: 0; font-size: 0;"><img src="images/itchio-logo.svg" alt="" style="width: 2.5rem"></button></a>
-                      
-                      <button class="prBtn"><i class="fa fa-play"></i></button>
-                    </a>
-                  </div>
-                </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
-              </div>
-              <!-------------------- 3D MODELLING SECTION -------------------->
-              <div class="bigBox" id="ModelSec" style="display: none;">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="Pf3D1" style="display: contents">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">A lost world</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/LC_cave1.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_cave2.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_cave3.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_outside1.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_outside2.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_outside3.jpeg" alt="Placeholder" class="bigImg">
-                      <img src="images/LC_outside4jpeg" alt="Placeholder" class="bigImg">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Blender from Jan to April 2023</h2>
-                    <p class="prText">
-                      A lost world was a project to create a 3D environment based on a fantasy world. The viewer is walked through 3 small tableau environments from a different world as they attempt to deciper what happened to the lost world.
-                      <br><br>
-                      Explore through the abandonned mine shaft overrun with crystals, the flower field, the ruins of a temple to make it see the extent of the world at the cliff's edge. This project took a full semster to make and pushed my knowledge of blender and textures. 
-                    </p>
-                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
-                      <button class="prBtn"><i class="fa fa-play"></i></button>
-                    </a>
-                  </div>
-                </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
-              </div>
-              <!--------------- GRAPHIC DESIGN SECTION ------------->
-              <div class="bigBox" id="DesignSec" style="margin-bottom: 10rem;display: none">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="prFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="PfGr1" style="display: contents">
-                  <div class="prLeft">
-                    <div class="prTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Grocery Prices Zine</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/zine_cover1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
-                      <img src="images/zine_cover2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
-                      <img src="images/zine_full1.png" alt="Placeholder" class="bigImg">
-                      <img src="images/zine_full2.png" alt="Placeholder" class="bigImg">
-                      <img src="images/zine_full3.png" alt="Placeholder" class="bigImg">
-                      <img src="images/zine_inside1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
-                      <img src="images/zine_inside2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
-                    </div>
-                  </div>
-                  <div class="prRight">
-                    <h2>Created in Procreate and printed to create a physical copy</h2>
-                    <p class="prText">
-                      A set of 3 miniature zines created in response to the rising grocery prices of this decade. They gives tips and tricks on how to get around inflation by shopping smarter and making meals that use all your ingredients. This zine is meant for students and/or young adults to help them navigate a the new world where the prices to eat has skyrockected.
-                      ​<br><br>
-                      Illustrated on Procreate, these zines were designed to be printed out and used a as pamphlets for universities and other youth spaces. They use only 1 colour to reduce the printing costs.
-                    </p>
-                  </div>
-                </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="prFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
-              </div>
-            </div>
-          </div>
-          <div id="dividerT" style="width: 85%;position: relative;"></div>
-        </div>
+      </div>
     </div>
     <div class="object" style="position: absolute; ">
       <div id="circle"></div>
-      <div style="flex: auto;">
-        <div id="divider" style="width: 85%;"></div>
+      <div style="display: flex;flex: auto;">
+        <div id="dividerT"></div>
       </div>
     </div>
   </body>

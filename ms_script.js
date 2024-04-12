@@ -2,28 +2,66 @@
 let page = 1;
 let num = 0;
 let currentNum = 1;
-const Hscroll = document.getElementById("Hscroll");
+let screenW = screen.availWidth;
+let screenH = screen.availHeight;
 
-window.addEventListener("scroll", function(event){
-    if(this.scrollY >= 10 && this.scrollY <= 1000){
-        this.document.getElementById("divider").style.width = "85%";
-    } else {
-        this.document.getElementById("divider").style.width = "100%";
+window.addEventListener('load', function(event){
+    document.getElementById("topScroll").addEventListener("scroll", function(){
+        if(this.scrollLeft <= screenW){
+            document.getElementById("dividerT").style.display = "flex";
+            document.getElementById("circle").style.marginLeft = "2vw";
+        } else if(this.scrollLeft <= screenW*2 && this.scrollLeft >= screenW){
+            document.getElementById("circle").style.marginLeft = "45vw";
+        } else {
+            document.getElementById("dividerT").style.display = "flex";
+            document.getElementById("circle").style.marginLeft = "85vw";
+        }
+        
+    })
+}, false)
+
+window.addEventListener("keydown", function(e){
+    if(e.code == "ArrowLeft"){
+        this.document.getElementById("circle").style.marginLeft = this.document.getElementById("circle").style.marginLeft + 5;
+    } else if(e.code == "ArrowRight"){
+        this.document.getElementById("circle").style.left += 1;
+    } else if(e.code == "ArrowDown"){
+        console.log("down");
     }
-}, false);
+});
 
 function moveCircle(num){
-    console.log(":)");
-    if(currentNum > num){
-        document.getElementById("topScroll").scrollLeft -= 2000*(currentNum-num);
-    } else if(currentNum < num){
-        document.getElementById("topScroll").scrollLeft += 2000*(num-currentNum);
+    switch(num){
+        case 1: 
+            document.getElementById("topScroll").scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+            scrollLeft.scrollLeft += 0;
+            document.getElementById("circle").style.marginLeft = "2vw";
+            break;
+        case 2:
+            document.getElementById("topScroll").scroll({
+                top: 0,
+                left: screenW+screenW/2,
+                behavior: "smooth",
+            });
+            window.scrollLeft += window.innerWidth;
+            document.getElementById("circle").style.marginLeft = "42vw";
+            break;
+        case 3:
+            document.getElementById("topScroll").scroll({
+                top: 0,
+                left: screenW*3,
+                behavior: "smooth",
+            });
+            document.getElementById("circle").style.marginLeft = "85vw";
+            break;
     }
-    currentNum = num; 
 }
 
 function previewJump(type, num){
-    console.log(":)");
     window.scrollTo (0, 1500);
     changeProject(type, num);
 }
