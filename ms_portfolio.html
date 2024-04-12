@@ -10,9 +10,9 @@
   </head>
   <body id="body">
     <div class="menu" id="topMenu" style="position: absolute; left: 30vw;">
-      <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
-      <button id="menuBtn" onclick="moveCircle(2)">ABOUT ME</button>
-      <button id="menuBtn" onclick="moveCircle(3)">PORTFOLIO</button>
+        <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
+        <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
+        <button id="menuBtn" onclick="moveCircle(3)">ABOUT ME</button>
     </div>
     <div class="Hscroll" id="Hscroll" style="height: 100%; overflow-y: hidden;">
       <div class="Hscroll" id="topScroll">
@@ -53,19 +53,15 @@
             </div>
           </div>
           <div class="portfolio" style="overflow-x: clip;">
-            <!--------------------- BOTTOM PAGE ---------------------->
-            <div style="display: flex; flex: auto;width: 125vw">
-              <div id="divider" style="width: 50vw;"></div>
-              <div id="divider" style="width: 50vw;left: 25vw"></div>
-            </div>
+            <!--------------------- BOTTOM PAGE --------------------->
             <div class="sections">
-              <button id="secBtn" onclick="changeSection(1)" style="background-color: #e2d2e7;">GAMES</button>
-              <button id="secBtn" onclick="changeSection(2)">3D WORK</button>
-              <button id="secBtn" onclick="changeSection(3)">GRAPHIC</button>
+              <button class="secBtn" id="secBtn" onclick="changeSection(1)">GAMES</button>
+            <button class="secBtn" onclick="changeSection(2)">3D WORK</button>
+            <button class="secBtn" onclick="changeSection(3)">GRAPHIC</button>
             </div>
               <!------------------- VIDEO GAME SECTION ------------------->
               <div class="bigBox" id="GameSec" style="border-top-left-radius: 0;border-top-right-radius: 0;">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <button id="Galeft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="PfGa1" style="display: contents">
                   <div class="pfLeft">
                     <div class="pfTitle">
@@ -192,11 +188,11 @@
                     </a>
                   </div>
                 </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+                <button id="Garight" style="position: relative; margin-top: 30vh; left: 43vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!-------------------- 3D MODELLING SECTION -------------------->
-              <div class="bigBox" id="ModelSec" style="display: none;">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+              <div class="bigBox" id="ModelSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button id="3Dleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="Pf3D1" style="display: contents">
                   <div class="pfLeft">
                     <div class="pfTitle">
@@ -224,12 +220,104 @@
                     </a>
                   </div>
                 </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+                <div id="Pf3D2" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Character Model</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/BearC_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_4.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in BlenderCharacter Model made in Blender 2022</h2>
+                    <p class="pfText">
+                      This character was created by scratch to learn about rigging and animating a human like model. Her design is meant to look like a young girl in a bear sweater with a generally cyberpunk aesthetic. Her focal point, the bear sweater, was meant to be cute and stylized but also give her a more unique look.
+                      <br><br>
+                      On top of modelling this character, a walk cycle was also made to test out animating in blender and understanding the anatomy of a walk cycle. After animating her walk cycle, she was also brought into the game engine unity to test the animation further.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D3" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Diorama</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/Diorama_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_4.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_5.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_6.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender, this haunted house model made in 2022</h2>
+                    <p class="pfText">
+                      This diorama was made as a low-poly modelling exercise as well as a way to test darker lighting. The creative process behind this house was developing a wide range of small props to make the house look haunted and creepy while still embracing the cute aspect of low-poly models.
+                      <br><br>
+                      As for the lighting, the test was to light the scene almost completely from props on the scene. There are lights inside the house to act as a main light source with smaller sources giving more colour and light to the scene. This includes a pentagram in the back that gives off a creepy aesthetic and some lanterns in the front yard to give a more comfortable but still eerie feeling.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D4" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Self Portrait</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/FaceM_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/FaceM_2.png_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/FaceM_3.png_3.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender, this a self portrait of myself made in 2022</h2>
+                    <p class="pfText">
+                      TBA
+                      <br><br>
+                    </p>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D5" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Experiments</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/random_1.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>A variety of projects create in Blender between 2021-2022</h2>
+                    <p class="pfText">
+                      TBA
+                      <br><br>
+                    </p>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn"><i class="fa fa-play"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <button id="3Dright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!--------------- GRAPHIC DESIGN SECTION ------------->
-              <div class="bigBox" id="DesignSec" style="margin-bottom: 10rem;display: none">
-                <button style="position: relative; margin-top: 25rem; right: 38rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="PfGr1" style="display: contents">
+              <div class="bigBox" id="DesignSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button id="Ranleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfRan', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="PfRan1" style="display: contents">
                   <div class="pfLeft">
                     <div class="pfTitle">
                       <h2 class="smallTitle" style="margin-bottom: auto">Grocery Prices Zine</h2>
@@ -253,7 +341,7 @@
                     </p>
                   </div>
                 </div>
-                <button style="position: relative; margin-top: 25rem; left: 56rem" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+                <button id="Ranright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('PfRan', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
             </div>
             <div style="display: flex; flex: auto;">
@@ -264,11 +352,11 @@
         <div id="AboutSec" class="topScroll" style="overflow-y: hidden;">
           <div class="about">
             <div class="abLeft">
-              <img src="images/Picture.jpg" alt="" style="width: 30rem; border-bottom: 2rem #EAE2ED solid; border-right: 2rem #EAE2ED solid">
+              <img src="images/Picture.jpg" alt="" style="width: 25vw; border-bottom: 2vh #EAE2ED solid; border-right: 2vw #EAE2ED solid">
             </div>
             <div class="abRight">
-              <p class="name">About the Artist</p>
-              <div class="medBox" style="height: 35rem;">
+              <p class="name" style="margin: auto;">About the Artist</p>
+              <div class="medBox" style="height: 50vh;">
                 <div id="Ab1" style="display: none;">
                   <p class="abtText">My name is Margaret Summers and I am an upcoming game developer.
                     <br><br>I specialize in game development and throughout my studies I have learned to program in multiple languages for a range of different digital mediums and platforms. My passion is developing games and other digital media that immerse audiences in a new world of my own creation. Through the medium of games, I hope to make topics considered to be difficult more accessible in an entertaining and challenging way. <n>
@@ -315,6 +403,8 @@
       <div id="circle"></div>
       <div style="display: flex;flex: auto;">
         <div id="dividerT"></div>
+        <div id="divider" style="width: 42vw"></div>
+        <div id="divider" style="width: 42vw; right: 0"></div>
       </div>
     </div>
   </body>

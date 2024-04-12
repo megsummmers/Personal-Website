@@ -2,6 +2,8 @@
 let page = 1;
 let num = 0;
 let currentNum = 1;
+let first = true;
+let vscroll = true;
 let screenW = screen.availWidth;
 let screenH = screen.availHeight;
 
@@ -10,13 +12,25 @@ window.addEventListener('load', function(event){
         if(this.scrollLeft <= screenW){
             document.getElementById("dividerT").style.display = "flex";
             document.getElementById("circle").style.marginLeft = "2vw";
-        } else if(this.scrollLeft <= screenW*2 && this.scrollLeft >= screenW){
+        } else if(this.scrollLeft <= screenW*2 && this.scrollLeft >= screenW && vscroll){
+            document.getElementById("dividerT").style.display = "none";
+            document.getElementById("circle").style.marginLeft = "45vw";
+        } else if(this.scrollLeft <= screenW*2 && this.scrollLeft >= screenW && !vscroll){
             document.getElementById("circle").style.marginLeft = "45vw";
         } else {
             document.getElementById("dividerT").style.display = "flex";
             document.getElementById("circle").style.marginLeft = "85vw";
         }
-        
+    });
+
+    this.document.getElementById("PortfolioSec").addEventListener("scroll", function(){
+            console.log(this.scrollTop, screenH);
+        if(this.scrollTop >= screenH){
+            document.getElementById("dividerT").style.display = "flex";
+            vscroll = false;
+        } else {
+            vscroll = true;
+        }
     })
 }, false)
 
@@ -67,6 +81,7 @@ function previewJump(type, num){
 }
 
 function changeSection(num){
+    
     switch(num){
         case 1:
             document.getElementById("GameSec").style.display = "block";
@@ -84,6 +99,8 @@ function changeSection(num){
             document.getElementById("DesignSec").style.display = "block";
             break;
     }
+
+    
 }
 
 function changeAbt(num){
@@ -104,9 +121,9 @@ function changeAbt(num){
 }
 
 function changeProject(type, side){
-    var pages = [];
 
     if(type == 'PfGa'){
+        var pages = [5];
         pages[0] = document.getElementById("PfGa1");
         pages[1] = document.getElementById("PfGa2");
         pages[2] = document.getElementById("PfGa3");
@@ -118,29 +135,62 @@ function changeProject(type, side){
         }else if(side == "right" && num != 4){
             num += 1;
         }
-    } else if(type == 'Ab'){
-        pages[0] = document.getElementById("Ab1");
-        pages[1] = document.getElementById("Ab2");
-        pages[2] = document.getElementById("Ab3");
+        // change arrows
+        if(num == 0){
+            document.getElementById("Galeft").style.display = "none";
+            document.getElementById("Garight").style.left = "46vw";
+        } else if(num == 4){
+            document.getElementById("Garight").style.display = "none";
+        } else {
+            document.getElementById("Galeft").style.display = "inline-block";
+            document.getElementById("Garight").style.display = "inline-block";
+            document.getElementById("Garight").style.left = "43vw";
+        }
+    } else if(type == 'Pf3D'){
+        var pages = [5];
+        pages[0] = document.getElementById("Pf3D1");
+        pages[1] = document.getElementById("Pf3D2");
+        pages[2] = document.getElementById("Pf3D3");
+        pages[3] = document.getElementById("Pf3D4");
+        pages[4] = document.getElementById("Pf3D5");
         // change max
         if(side == "left" && num != 0){
             num -= 1;
-        }else if(side == "right" && num != 2){
+        }else if(side == "right" && num != 4){
             num += 1;
         }
-    } else if(type == 'Pr'){
-        pages[0] = document.getElementById("Pr1");
-        pages[1] = document.getElementById("Pr2");
-        pages[2] = document.getElementById("Pr3");
+        // change arrows
+        if(num == 0){
+            document.getElementById("3Dleft").style.display = "none";
+            document.getElementById("3Dright").style.left = "46vw";
+        } else if(num == 4){
+            document.getElementById("3Dright").style.display = "none";
+        } else {
+            document.getElementById("3Dleft").style.display = "inline-block";
+            document.getElementById("3Dright").style.display = "inline-block";
+            document.getElementById("3Dright").style.left = "43vw";
+        }
+    } else if(type == 'PfRan'){
+        var pages = [1];
+        pages[0] = document.getElementById("PfRan1");
         // change max
         if(side == "left" && num != 0){
             num -= 1;
-        }else if(side == "right" && num != 2){
+        }else if(side == "right" && num != 1){
             num += 1;
+        }
+        // change arrows
+        if(num == 0){
+            document.getElementById("Ranleft").style.display = "none";
+            document.getElementById("Ranright").style.left = "46vw";
+        } else if(num == 0){
+            document.getElementById("Ranright").style.display = "none";
+        } else {
+            document.getElementById("Ranleft").style.display = "inline-block";
+            document.getElementById("Ranright").style.display = "inline-block";
+            document.getElementById("Ranright").style.left = "43vw";
         }
     }
-
-    console.log(num);
     
     for(var i=0; i < pages.length; i++){
         if(i == num){

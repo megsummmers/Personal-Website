@@ -143,18 +143,18 @@ body {
 
 .abtText {
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: 1vw;
 }
 
 .abBtn {
-    height: 8rem;
-    width: 8rem;
+    height: 8vh;
+    width: 8vh;
     border: none;
     border-radius: 5rem;
-    font-size: 5rem;
+    font-size: 3rem;
     background-color: #AB89B5;
     color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -186,10 +186,12 @@ body {
 }
 
 .pfText {
+    height: 45vh;
     font-size: 1.2rem;
     background-color: #EAE2ED;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+    padding: 1vh;
+    margin-bottom: 1vh;
+    overflow-y: scroll;
 }
 
 .pfBtn {
@@ -210,22 +212,17 @@ body {
 }
 
 .pfFloatBtn{
-    height: 4rem;
-    width: 4rem;
+    height: 8vh;
+    width: 5vh;
     border: none;
-    border-radius: 1.5rem;
+    border-radius: 1vw;
+    margin-top: 30vh;
     font-size: 3rem;
     background-color: white;
     color: #ab89b5;
 }
 
 .pfFloatBtn:hover{
-    height: 4rem;
-    width: 4rem;
-    border: none;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    background-color: white;
     color: #593b62;
 }
 
@@ -239,13 +236,13 @@ body {
     width: 75vw;
     height: 5vh;
     margin-left: 12vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     background-color: #EAE2ED;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
 }
 
-#secBtn {
+.secBtn {
     background-color: #EAE2ED;
     border: none;
     width: 20vw;
@@ -258,12 +255,12 @@ body {
     color:#7f528d;
 }
 
-#secBtn:hover {
+.secBtn:hover {
     background-color: #e2d2e7;
     color: #48314E;
 }
 
-#secBtn:current {
+.secBtn:focus {
     background-color: #e2d2e7;
     color: #48314E;
 }
@@ -292,7 +289,7 @@ body {
 
 .bigBox{
     background-color: white;
-    height: 45rem;
+    height: 70vh;
     width: 75vw;
     border-radius: 1rem;
     flex-basis: 100rem;
@@ -360,7 +357,8 @@ body {
 #divider{
     width: 42vw;
     height: 8vh;
-    position: relative;
+    position: fixed;
+    bottom: 0vw;
     background-color: #48314E;
 }
 
