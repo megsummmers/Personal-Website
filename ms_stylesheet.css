@@ -84,7 +84,9 @@ body {
 
 .home{
     font-family: "Berkshire Swash", serif;
-    font-size: 8rem;
+    color: white;
+    font-size: 6rem;
+    margin: auto;
     text-align: center;
 }
 
@@ -289,7 +291,7 @@ body {
     background-color: white;
     margin: 2vw;
     margin-bottom: 0;
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 1vw;
     height: 25vw;
     width: 50vw;
